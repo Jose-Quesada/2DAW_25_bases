@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CounterPage } from "./pages/counter/counter-page";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  selector: 'primer-componente',
+  imports: [RouterOutlet, CounterPage],
+  templateUrl: './app.html'
 })
 export class App {
-  protected readonly title = signal('bases');
+  protected readonly title = signal('Fernando III');
 }
